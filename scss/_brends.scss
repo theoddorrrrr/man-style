@@ -1,0 +1,30 @@
+.brends {
+    background-color: $darkGrayColor;
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__title {
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 0px 50px 0px;
+        gap: 1em;
+    }
+
+    &__item {
+        @media (any-hover: hover) {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+            &:hover {
+                transform: translateY(-10px);
+            }
+          }
+    }
+}

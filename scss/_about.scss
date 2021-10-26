@@ -1,0 +1,150 @@
+.about {
+    background: url('/img/about/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 80px 0px 80px 0px;
+        gap: 2em;
+        & > div {
+            flex: 1;
+        }
+        @media (min-width: $md2+px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__info {
+    }
+
+    &__categories {
+    }
+
+    &__keep-in-touch {
+    }
+}
+
+.info {
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+.title {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0px 0px 30px 0px;
+    @media (max-width: $md2+px) {
+        text-align: center;
+    }
+}
+.text {
+    font-size: 14px;
+    line-height: 150%;
+    @media (max-width: $md2+px) {
+        text-align: center;
+        padding: 0px 0px 50px 0px;
+    }
+}
+
+.categories {
+
+    &__title{     
+    }
+
+    &__items{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        @media (max-width: $md2+px) {
+            justify-content: center;
+            padding: 0px 0px 50px 0px;
+        }
+    }
+
+    &__item{
+        font-size: 14px;
+        line-height: 150%;
+        padding: 15px;
+        background-color: $darkGrayColor;
+        @media (any-hover: hover) {
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.keep-in-touch {
+
+    &__title {
+    }
+
+    &__text {
+        @media (max-width: $md2+px) {
+            padding: 0px 0px 0px 0px;
+        }
+    }
+
+    &__form {
+    }
+}
+.form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 50px 0px 0px 0px;
+    @media (max-width: $md2+px) {
+        justify-content: center;
+    }
+    &__input {
+        width: 210px;
+        height: 42px;
+        padding: 10px;
+        background-color: #c4c4c4;
+        color: white;
+        &::placeholder {
+            transition: all 0.3s ease;
+            color: white;
+        }
+        @media (any-hover: hover) {
+            transition: all 0.3s ease;
+            &:hover {
+                background-color:white ;
+                color: black;
+            }
+            &:hover::placeholder {
+                color: black;
+            }
+        }
+    }
+
+    &__submit {
+        width: 140px;
+        height: 42px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        @media (any-hover: hover) {
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: #c4c4c4 ;
+                color: black;
+            }
+        }
+    }
+}

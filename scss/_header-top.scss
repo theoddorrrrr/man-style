@@ -1,0 +1,35 @@
+.header-top {
+    @media (max-width: $md2+px) {
+        display: none;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: $grayColor;
+        height: 44px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    &__phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__schedule {
+    }
+
+    &__time {
+    }
+
+    &__registration {
+    }
+}

@@ -1,0 +1,23 @@
+.footer {
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        height: 50px;
+    }
+    &__rights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    &__author {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-decoration: underline;
+    }
+}
+

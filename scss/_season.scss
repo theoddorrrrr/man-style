@@ -1,0 +1,110 @@
+.season {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $md2+px) {
+        flex-direction: row;
+    }
+    &__products {
+        flex: 1.1 auto;
+    }
+
+    &__collection {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(/img/season/collection.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        flex: 1 500px;
+        height: 800px;
+        width: 100%;
+        padding: 0px 0px 100px 0px;
+    }
+}
+.products {
+
+    &__title {
+        font-size: 36px;
+        padding: 50px 0px 20px 0px;
+        text-transform: uppercase;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            height: 1px;
+            background-color: lightgray;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px;
+        gap: 1em;
+        @media (min-width: $md2+px) {
+            flex-wrap: nowrap;
+        }
+    }
+}
+.item {
+
+    &__image {
+        background-color: #191B1C;
+        transition: background-color 0.3s ease;
+        & img {
+            transition: transform 0.5s ease;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: white;
+            }
+            & img:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__title {
+        font-family: $fontItems;
+        padding: 10px 0px;
+    }
+
+    &__price {
+        font-family: $fontItems;
+    }
+}
+.collection {
+    &_title {
+        font-size: 36px;
+        padding: 0px 0px 10px 0px;
+        text-transform: uppercase;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 120px;
+            height: 1px;
+            background-color: lightgray;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__button {
+        width: 311px;
+        font-size: 18px;
+        margin: 20px 0px 0px 0px;
+        letter-spacing: 5px;
+    }
+}
