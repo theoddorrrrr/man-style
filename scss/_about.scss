@@ -20,25 +20,8 @@
             align-items: flex-start;
         }
     }
-
-    &__info {
-    }
-
-    &__categories {
-    }
-
-    &__keep-in-touch {
-    }
 }
 
-.info {
-
-    &__title {
-    }
-
-    &__text {
-    }
-}
 .title {
     font-size: 24px;
     text-transform: uppercase;
@@ -57,9 +40,6 @@
 }
 
 .categories {
-
-    &__title{     
-    }
 
     &__items{
         display: flex;
@@ -87,17 +67,10 @@
 }
 
 .keep-in-touch {
-
-    &__title {
-    }
-
     &__text {
         @media (max-width: $md2+px) {
             padding: 0px 0px 0px 0px;
         }
-    }
-
-    &__form {
     }
 }
 .form {
